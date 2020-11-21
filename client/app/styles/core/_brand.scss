@@ -1,0 +1,34 @@
+.brand-dashboard {
+  // .table-section {
+  //   margin: 20px 0px;
+  // }
+
+  .desc-column {
+    white-space: normal !important;
+    @include text-ellipsis(2, 2);
+  }
+}
+
+.brand-list {
+  .brand-box {
+    height: 100%;
+    padding: 10px;
+    border: $border-default;
+    border-radius: $border-radius-default;
+    @include transition();
+
+    .brand-link {
+      display: block;
+    }
+
+    &:hover {
+      background-color: $secondary-bg;
+      border-color: $border-hover-color;
+      @include transition();
+    }
+
+    .brand-desc {
+      @include text-ellipsis(2);
+    }
+  }
+}

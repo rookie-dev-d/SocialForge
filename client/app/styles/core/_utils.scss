@@ -1,0 +1,94 @@
+// utils styles
+
+/* start not found styles */
+.not-found {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: $font-weight-bold-two;
+  color: $font-custom-color;
+}
+/* end not found styles */
+
+.message-box {
+  p {
+    margin: 0;
+    text-transform: capitalize;
+  }
+}
+
+.col-no-padding {
+  padding: 0;
+}
+
+.flex-row {
+  @include media-breakpoint-up(md) {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+}
+
+.flex-sm-row {
+  margin-right: -8px;
+  margin-left: -8px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.one-line-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-link {
+  @include transition();
+
+  &:hover,
+  &:focus {
+    box-shadow: none !important;
+    color: $font-custom-color !important;
+    background-color: $secondary-bg;
+    @include transition();
+  }
+}
+
+// default link
+.default-link {
+  color: $font-custom-color !important;
+  font-weight: $font-weight-bold-one;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
+
+// redirect-link
+.redirect-link {
+  color: $primary-color !important;
+  font-weight: $font-weight-bold-one;
+  text-transform: capitalize;
+}
+
+.desktop-hidden {
+  display: none;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+}
+
+.fa {
+  font-size: $font-size-small !important;
+}
+
+.drawer-backdrop {
+  @include transition();
+
+  &.dark-overflow {
+    @include transition();
+  }
+}
